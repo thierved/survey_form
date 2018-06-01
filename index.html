@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+
+    <title>Survey from</title>
+</head>
+<body>
+    <div class="container">
+
+        <h1 id="title">Survey Form</h1>
+            
+        <div class="content">
+            <p id="description">Tell us about your journey as a self-taught programmer</p>
+            <form id="survey-form" >
+                <div class="input">
+                    <label for="name" id="name-label" class="personal">Name</label>
+                    <input type="text" id="name" class="personal" placeholder="Enter your name" required>
+                </div>
+                
+                <div class="input">
+                    <label for="email" id="email-label" class="personal">Email</label>
+                    <input type="email" id="email" class="personal" placeholder="Enter your email" required>
+                </div>
+
+                <div class="input">
+                    <label for="age" id="number-label">When did you started learning to code?</label>
+                    <input type="number" id="number" placeholder="Age" min="12" max="60" required>  
+                </div>
+                
+                <div class="input">
+                    <label for="dropdown">What are you learning?</label>
+                    <select name="dropdown" id="dropdown">
+                        <option value="front-end web development">Front-end development</option>
+                        <option value="back-end web development">Back-end development</option>
+                        <option value="desktop app development">Desktop app development</option>
+                        <option value="mobile app development">Mobile app development</option>
+                        <option value="other">Other</option> 
+                    </select>
+                </div>
+                
+                
+                <div class="input">
+                    <label for="radio">What type of job do you have or want?</label>
+                    <div class="options">                        
+                        <input type="radio" name="job" value="remote job">Remote job <br>
+                        <input type="radio" name="job" value="freelance">Freelance <br>
+                        <input type="radio" name="job" value="full-time">Full-time <br>
+                        <input type="radio" name="job" value="part-time">Part-time <br>  
+                    </div>
+                      
+                </div>
+                
+                <div class="input">
+                    <label for="checkbox">What language(s) do you use in your projects?</label>
+                    <div class="options">
+                        <input type="checkbox" value="Java">Java <br>
+                        <input type="checkbox" value="JavaScript">JavaScript <br>
+                        <input type="checkbox" value="Python">Python <br>
+                        <input type="checkbox" value="C#">C# <br>
+                        <input type="checkbox" value="C++">C++ <br>
+                        <input type="checkbox" value="HTML/CSS">HTML/CSS <br>
+                        <input type="checkbox" value="Swift">Swift <br>   
+                    </div>                    
+                </div>
+                
+                <div class="input">
+                    <label for="comment">How did you get in to programming?</label>
+                    <textarea placeholder="How did you get in to programming?"></textarea>
+                    <button type="submit" id="submit">Submit</button>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+    <script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
+</body>
+</html>

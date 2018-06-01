@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Catamaran', sans-serif;
+}
+
+.container {
+    width: 100%;
+    background-color: rgb(111, 119, 144);    
+    padding-bottom: 3rem; 
+}
+
+.content {
+    width: 70%;
+    margin: auto;
+    padding: 2rem;
+    background-color: rgb(212, 212, 212);
+}
+
+#title {
+    padding: 1rem;
+    color: #fff;
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Roboto', sans-serif;    
+}
+
+#description {
+    padding-bottom: 2rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#survey-form {
+    width: 70%;
+    margin: auto;
+}
+
+.input {
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type='text'], input[type='email']{
+    display: block;
+    width: 70%;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+label {
+    padding: 5px;
+    font-size: 1.2rem;
+}
+
+.options {
+    padding: 10px;
+}
