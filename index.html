@@ -24,16 +24,16 @@
                 
                 <div class="input">
                     <label for="email" id="email-label" class="personal">Email</label>
-                    <input type="email" id="email" class="personal" placeholder="Enter your email" required>
+                    <input type="email" id="email"  placeholder="Enter your email" required>
                 </div>
 
                 <div class="input">
-                    <label for="age" id="number-label">When did you started learning to code?</label>
+                    <label for="age" id="number-label" class="personal">When did you started learning to code ?</label>
                     <input type="number" id="number" placeholder="Age" min="12" max="60" required>  
                 </div>
                 
                 <div class="input">
-                    <label for="dropdown">What are you learning?</label>
+                    <label for="dropdown">What are you learning ?</label>
                     <select name="dropdown" id="dropdown">
                         <option value="front-end web development">Front-end development</option>
                         <option value="back-end web development">Back-end development</option>
@@ -44,8 +44,8 @@
                 </div>
                 
                 
-                <div class="input">
-                    <label for="radio">What type of job do you have or want?</label>
+                <div class="input choice">
+                    <label for="radio">What type of job do you have or want ?</label>
                     <div class="options">                        
                         <input type="radio" name="job" value="remote job">Remote job <br>
                         <input type="radio" name="job" value="freelance">Freelance <br>
@@ -55,8 +55,8 @@
                       
                 </div>
                 
-                <div class="input">
-                    <label for="checkbox">What language(s) do you use in your projects?</label>
+                <div class="input choice">
+                    <label for="checkbox">What language(s) do you use in your projects ?</label>
                     <div class="options">
                         <input type="checkbox" value="Java">Java <br>
                         <input type="checkbox" value="JavaScript">JavaScript <br>
@@ -68,11 +68,12 @@
                     </div>                    
                 </div>
                 
-                <div class="input">
+                <div class="input choice">
                     <label for="comment">How did you get in to programming?</label>
-                    <textarea placeholder="How did you get in to programming?"></textarea>
-                    <button type="submit" id="submit">Submit</button>
+                    <textarea rows="5" placeholder="How did you get in to programming?"></textarea>                    
                 </div>
+
+                <button type="submit" id="submit">Submit</button>
                 
             </form>
         </div>

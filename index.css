@@ -40,20 +40,87 @@
 .input {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 5px; 
+}
+
+input, #dropdown, textarea, button {
+    font-size: 1rem;
+    padding: 7px;
+    border: 2px solid rgb(180, 180, 180);
+    background-color: rgba(255, 255, 255, 0.959);
+    border-radius: 6px;
+}
+
+label::after {
+    content: '*';
+    color: red;
 }
 
 input[type='text'], input[type='email']{
     display: block;
     width: 70%;
-    padding: 5px;
-    margin: 5px 0;
+    margin: 5px 0;    
+}
+
+input[type='number'] {
+    width: 4rem;
+    appearance: none;
 }
 
 label {
-    padding: 5px;
+    padding-top: 0.8rem;
+    padding-bottom: 0;
     font-size: 1.2rem;
 }
 
-.options {
-    padding: 10px;
+.options input {
+    padding: 5px;   
+    margin-left: 10px;  
+}
+
+.choice {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;    
+}
+
+.choice label {
+    margin-bottom: 10px;
+}
+
+.choice input {
+    margin-right: 10px;
+}
+
+button {
+    display: block;
+    width: 120px;
+    padding: 8px 0;
+    margin: 25px auto;
+    color: #fff;
+    background: rgb(112, 40, 6);
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width : 936px) {
+
+    .content {
+        width: 95%;
+    }
+
+    #survey-form {
+        width: 100%;
+    }
+
+    .input {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5px; 
+    }
+
+    input[type='text'], input[type='email']{
+        display: block;
+        width: 100%;
+        margin: 5px 0;    
+    }
 }
