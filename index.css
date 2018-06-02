@@ -12,7 +12,7 @@
 }
 
 .content {
-    width: 70%;
+    width: 80%;
     margin: auto;
     padding: 2rem;
     background-color: rgb(212, 212, 212);
@@ -67,6 +67,10 @@ input[type='number'] {
     appearance: none;
 }
 
+#dropdown, input[type='number'] {
+    height: 45px;
+}
+
 label {
     padding-top: 0.8rem;
     padding-bottom: 0;
@@ -102,7 +106,7 @@ button {
     text-transform: uppercase;
 }
 
-@media only screen and (max-width : 936px) {
+@media only screen and (max-width : 812px) {
 
     .content {
         width: 95%;
